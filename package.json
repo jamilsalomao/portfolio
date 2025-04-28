@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-new-version",
+  "version": "1.0.0",
+  "type":"module",
+  "scripts": {
+    "dev":"vite",
+    "build":"vite build",
+    "preview":"vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3",
+    "vite": "^6.3.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3"
+  }
+}
