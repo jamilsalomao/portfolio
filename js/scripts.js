@@ -36,7 +36,7 @@ const currentLanguage = document.getElementById('current-language');
 const currentLanguageMobile = document.getElementById('current-language-mobile');
 
 // Check for saved language preference or default to Portuguese
-const savedLanguage = localStorage.getItem('language') || 'pt-br';
+const savedLanguage = localStorage.getItem('language') || 'pt';
 setLanguage(savedLanguage);
 
 function toggleLanguageMenu(menu) {
