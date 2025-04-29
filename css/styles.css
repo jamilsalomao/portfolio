@@ -91,6 +91,7 @@ html {
 
 .dark .language-options {
     background-color: #1e293b;
+    color: white;
 }
 
 .language-options.show {
