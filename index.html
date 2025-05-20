@@ -11,6 +11,19 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "PlEwnOh8HWe7DIhX2",
+        });
+    })();
+    </script>
+
+
+
 </head>
 <body class="font-sans transition-colors duration-300">
     <!-- Header -->
@@ -717,6 +730,7 @@
                                 <input
                                     type="text"
                                     id="name"
+                                    name="name"
                                     class="w-full px-4 py-2 border border-blue-300 dark:border-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:text-white dark:bg-gray-800"
                                     placeholder="Seu Nome"
                                     required
@@ -732,6 +746,7 @@
                                 <input
                                     type="email"
                                     id="email"
+                                    name="email"
                                     class="w-full px-4 py-2 border border-blue-300 dark:border-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:text-white dark:bg-gray-800"
                                     placeholder="Seu Email"
                                     required
@@ -747,6 +762,7 @@
                                 <input
                                     type="text"
                                     id="subject"
+                                    name="subject"
                                     class="w-full px-4 py-2 border border-blue-300 dark:border-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:text-white dark:bg-gray-800"
                                     placeholder="Assunto"
                                     required
@@ -761,6 +777,7 @@
                                 </label>
                                 <textarea
                                     id="message"
+                                    name="message"
                                     rows="4"
                                     class="w-full px-4 py-2 border border-blue-300 dark:border-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:text-white dark:bg-gray-800"
                                     placeholder="Sua Mensagem"

@@ -221,49 +221,45 @@ if (contactForm) {
         });
     });
     
-    // Form submission
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        // Validate all inputs
-        let isFormValid = true;
-        formInputs.forEach(input => {
-            if (!validateInput(input)) {
-                isFormValid = false;
-            }
-        });
-        
-        if (isFormValid) {
-            // Show loading spinner
-            submitSpinner.classList.remove('hidden');
-            
-            try {
-                // Simulate form submission with delay
-                await new Promise(resolve => setTimeout(resolve, 1500));
-                
-                // Show success message
+contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    let isFormValid = true;
+    formInputs.forEach(input => {
+        if (!validateInput(input)) {
+            isFormValid = false;
+        }
+    });
+
+    if (isFormValid) {
+        submitSpinner.classList.remove('hidden');
+
+        const templateParams = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+            date: new Date().toLocaleString('pt-BR')
+        };
+
+        emailjs.send('service_zv47lwe', 'template_tnofewk', templateParams)
+            .then(() => {
                 formStatus.textContent = 'Mensagem enviada com sucesso!';
                 formStatus.classList.remove('hidden', 'bg-red-500');
                 formStatus.classList.add('bg-green-600');
-                
-                // Reset form
                 contactForm.reset();
-                
-                // Hide success message after 5 seconds
-                setTimeout(() => {
-                    formStatus.classList.add('hidden');
-                }, 5000);
-            } catch (error) {
-                // Show error message
-                formStatus.textContent = 'Falha ao enviar mensagem. Por favor, tente novamente.';
+                setTimeout(() => formStatus.classList.add('hidden'), 5000);
+            }, (error) => {
+                formStatus.textContent = 'Erro ao enviar mensagem. Tente novamente.';
                 formStatus.classList.remove('hidden', 'bg-green-600');
                 formStatus.classList.add('bg-red-500');
-            } finally {
-                // Hide loading spinner
+            })
+            .finally(() => {
                 submitSpinner.classList.add('hidden');
-            }
-        }
-    });
+            });
+    }
+});
+
 }
 
 function isValidEmail(email) {
