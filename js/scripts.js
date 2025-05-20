@@ -247,6 +247,10 @@ contactForm.addEventListener('submit', async (e) => {
                 formStatus.textContent = 'Mensagem enviada com sucesso!';
                 formStatus.classList.remove('hidden', 'bg-red-500');
                 formStatus.classList.add('bg-green-600');
+
+                // ENVIA EMAIL DE CONFIRMAÇÃO PARA O REMETENTE
+        emailjs.send('service_zv47lwe', 'template_l04l6fl', templateParams);
+
                 contactForm.reset();
                 setTimeout(() => formStatus.classList.add('hidden'), 5000);
             }, (error) => {
