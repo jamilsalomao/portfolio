@@ -318,7 +318,6 @@ let maxSymbols = 35;
 let spawnIntervalId;
 
 function createSymbol() {
-    console.log("Criando um novo símbolo...")
     const symbolElement = document.createElement('div');
     symbolElement.classList.add('programming-symbol');
     symbolElement.innerHTML = programmingSymbols[Math.floor(Math.random() * programmingSymbols.length)];
