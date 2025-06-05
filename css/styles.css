@@ -111,3 +111,36 @@ html {
 .dark .language-option:hover {
     background-color: #2d3748;
 }
+
+.programming-symbol {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.8); /* Cor e opacidade dos símbolos */
+    font-size: 2rem; /* Tamanho inicial dos símbolos */
+    pointer-events: none; /* Garante que os símbolos não interfiram com cliques */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0.4 !important;
+}
+
+@keyframes moveSymbol {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.1;
+    }
+    90% {
+        opacity: 0.1;
+    }
+    100% {
+        transform: translate(var(--dx), var(--dy)); 
+        opacity: 0;
+    }
+}
+
+
+.dark .programming-symbol {
+    color: rgba(200, 200, 200, 0.8); 
+    opacity: 0.15;
+}

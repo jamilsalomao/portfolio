@@ -124,10 +124,8 @@ function checkVisibility() {
     });
 }
 
-// Initial check on page load
 window.addEventListener('load', checkVisibility);
 
-// Check on scroll
 window.addEventListener('scroll', checkVisibility);
 
 // // Project filtering
@@ -159,14 +157,12 @@ window.addEventListener('scroll', checkVisibility);
 //     });
 // });
 
-// Enhanced Form Validation
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     const formInputs = contactForm.querySelectorAll('input, textarea');
     const formStatus = document.getElementById('form-status');
     const submitSpinner = document.getElementById('submit-spinner');
     
-    // Validate individual input
     function validateInput(input) {
         const errorFeedback = input.nextElementSibling;
         let isValid = true;
@@ -248,7 +244,6 @@ contactForm.addEventListener('submit', async (e) => {
                 formStatus.classList.remove('hidden', 'bg-red-500');
                 formStatus.classList.add('bg-green-600');
 
-                // ENVIA EMAIL DE CONFIRMAÇÃO PARA O REMETENTE
         emailjs.send('service_zv47lwe', 'template_l04l6fl', templateParams);
 
                 contactForm.reset();
@@ -286,4 +281,136 @@ document.querySelectorAll('a[href^=""]').forEach(anchor => {
             });
         }
     });
+});
+
+const programmingSymbolsContainer = document.querySelector('.programming-symbols-background');
+
+if (programmingSymbolsContainer) {
+    console.log("Container de símbolos de programação encontrado!");
+} else {
+    console.error("ERRO: Container de símbolos de programação NÃO encontrado!");
+}
+
+const programmingSymbols = [
+    '<i class="fab fa-js"></i>',      
+    '<i class="fab fa-react"></i>',   
+    '<i class="fab fa-html5"></i>',   
+    '<i class="fab fa-css3-alt"></i>',
+    '<i class="fab fa-node-js"></i>', 
+    '<i class="fab fa-git-alt"></i>', 
+    '<i class="fab fa-npm"></i>',     
+    '<i class="fab fa-java"></i>',    
+    '<i class="fab fa-python"></i>',  
+    '<i class="fab fa-php"></i>',     
+    '<i class="fab fa-bootstrap"></i>',     
+    '<i class="fab fa-aws"></i>', 
+    '<i class="fab fa-docker"></i>', 
+    '<i class="fab fa-angular"></i>',  
+    '<i class="fab fa-windows"></i>', 
+    '<i class="fa-solid fa-database"></i>', 
+    '<i class="fa-solid fa-code"></i>',
+    '<i class="fab fa-github"></i>',
+    '<i class="fab fa-node"></i>',
+    '<i class="fab fa-figma"></i>'
+];
+
+let maxSymbols = 35;
+let spawnIntervalId;
+
+function createSymbol() {
+    console.log("Criando um novo símbolo...")
+    const symbolElement = document.createElement('div');
+    symbolElement.classList.add('programming-symbol');
+    symbolElement.innerHTML = programmingSymbols[Math.floor(Math.random() * programmingSymbols.length)];
+
+    const containerWidth = programmingSymbolsContainer.offsetWidth;
+    const containerHeight = programmingSymbolsContainer.offsetHeight;
+
+    const startEdge = Math.floor(Math.random() * 4); 
+    let startX, startY, endX, endY;
+
+    switch (startEdge) {
+        case 0: 
+            startX = Math.random() * containerWidth;
+            startY = -50;
+            endX = Math.random() * containerWidth;
+            endY = containerHeight + 50;
+            break;
+        case 1: 
+            startX = containerWidth + 50;
+            startY = Math.random() * containerHeight;
+            endX = -50;
+            endY = Math.random() * containerHeight;
+            break;
+        case 2: 
+            startX = Math.random() * containerWidth;
+            startY = containerHeight + 50;
+            endX = Math.random() * containerWidth;
+            endY = -50;
+            break;
+        case 3: 
+            startX = -50;
+            startY = Math.random() * containerHeight;
+            endX = containerWidth + 50;
+            endY = Math.random() * containerHeight;
+            break;
+    }
+
+    symbolElement.style.left = `${startX}px`;
+    symbolElement.style.top = `${startY}px`;
+
+    let baseFontSize = window.innerWidth < 768 ? 0.8 : 1.5; 
+    const fontSize = Math.random() * (baseFontSize + 2.5 - baseFontSize) + baseFontSize; 
+    symbolElement.style.fontSize = `${fontSize}rem`;
+
+    const opacity = Math.random() * (0.15 - 0.05) + 0.05; 
+    symbolElement.style.opacity = opacity;
+
+    symbolElement.style.setProperty('--dx', `${endX - startX}px`);
+    symbolElement.style.setProperty('--dy', `${endY - startY}px`);
+
+    const animationDuration = Math.random() * (30 - 20) + 20; 
+    symbolElement.style.animation = `moveSymbol ${animationDuration}s linear infinite`;
+
+    programmingSymbolsContainer.appendChild(symbolElement);
+
+    symbolElement.addEventListener('animationend', () => {
+        symbolElement.remove();
+    });
+}
+
+function spawnSymbols() {
+    if (programmingSymbolsContainer.children.length < maxSymbols) {
+        createSymbol();
+    }
+    let minSpawnTime = window.innerWidth < 768 ? 2000 : 1000; 
+    let maxSpawnTime = window.innerWidth < 768 ? 5000 : 3000; 
+    
+    spawnIntervalId = setTimeout(spawnSymbols, Math.random() * (maxSpawnTime - minSpawnTime) + minSpawnTime);
+}
+
+function updateAnimationOnResize() {
+    clearTimeout(spawnIntervalId);
+    programmingSymbolsContainer.innerHTML = '';
+
+    if (window.innerWidth < 768) {
+        maxSymbols = 15; 
+        for (let i = 0; i < 3; i++) { 
+            createSymbol();
+        }
+    } else {
+        maxSymbols = 35; 
+        for (let i = 0; i < 5; i++) { 
+            createSymbol();
+        }
+    }
+    spawnSymbols();
+}
+
+window.addEventListener('load', updateAnimationOnResize); 
+
+let resizeTimeout;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(updateAnimationOnResize, 250); 
 });
