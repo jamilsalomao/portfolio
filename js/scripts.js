@@ -57,6 +57,13 @@ function setLanguage(lang) {
     document.querySelectorAll(`.lang-${lang}`).forEach(el => {
         el.classList.remove('hidden');
     });
+
+    document.querySelectorAll('[data-lang-placeholder-pt]').forEach(element => {
+        const placeholderText = element.getAttribute(`data-lang-placeholder-${lang}`);
+        if (placeholderText) {
+            element.placeholder = placeholderText;
+        }
+    });
     
     // Save preference
     localStorage.setItem('language', lang);
