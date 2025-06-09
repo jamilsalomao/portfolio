@@ -30,14 +30,7 @@ Este portfólio foi construído com uma stack de tecnologias modernas e eficient
 
 Aqui estão algumas capturas de tela do portfólio em funcionamento:
 
-*(Insira aqui as imagens do seu site. Você pode usar um serviço como o Imgur para hospedar as imagens e colar o link delas aqui. Exemplo: `![Descrição da imagem](link_da_sua_imagem.png)`)*
 
-  * **Tela Inicial:**
-    `![Tela Inicial](link_da_imagem_da_tela_inicial.png)`
-  * **Seção de Projetos:**
-    `![Seção de Projetos](link_da_imagem_da_secao_projetos.png)`
-  * **Formulário de Contato:**
-    `![Formulário de Contato](link_da_imagem_do_formulario.png)`
 
 -----
 
