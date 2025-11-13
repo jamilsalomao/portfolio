@@ -39,20 +39,27 @@ Aqui estão algumas capturas de tela do portfólio em funcionamento:
 A estrutura do projeto é organizada para facilitar a manutenção e o desenvolvimento:
 
 ```
-portfolio/
-├── public/                 # Arquivos estáticos (imagens, favicon, etc.)
-├── src/
-│   ├── assets/             # Recursos como ícones, fontes, etc.
-│   ├── components/         # Componentes reutilizáveis da UI
-│   ├── styles/             # Arquivos de estilo CSS (Tailwind CSS)
-│   ├── main.js             # Ponto de entrada principal da aplicação
-│   └── index.html          # O arquivo HTML principal
-├── .gitignore              # Arquivos e diretórios a serem ignorados pelo Git
-├── package.json            # Dependências do projeto e scripts npm
-├── postcss.config.js       # Configuração do PostCSS (para Tailwind)
-├── tailwind.config.js      # Configuração do Tailwind CSS
-├── vite.config.js          # Configuração do Vite
-└── README.md               # Este arquivo!
+├── 📁 assets
+│   └── 📁 img
+│       ├── 🖼️ BiblioTech.png
+│       ├── 🖼️ FluxoPositivo.PNG
+│       ├── 🖼️ GCF.png
+│       ├── 🖼️ IdleClickerGame.png
+│       ├── 🖼️ Jamil.jpg
+│       ├── 🖼️ QuantumPages.png
+│       ├── 🖼️ WebCertificados.jpg
+│       └── 🖼️ portfolioimage.png
+├── 📁 css
+│   └── 🎨 styles.css
+├── 📁 js
+│   └── 📄 scripts.js
+├── ⚙️ .gitignore
+├── 📝 README.md
+├── 🌐 index.html
+├── ⚙️ package-lock.json
+├── ⚙️ package.json
+├── 📄 postcss.config.js
+└── 📄 tailwind.config.js
 ```
 
 -----
