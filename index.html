@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Desenvolvedor de Software</title>
-    <meta name="description" content="Portfólio profissional mostrando habilidades de análise de sistemas e desenvolvimento de software">
+    <meta name="description"
+        content="Portfólio profissional mostrando habilidades de análise de sistemas e desenvolvimento de software">
     <link rel="shortcut icon" type="imagex/png" href="/assets/img/portfolioimage.png">
     <link rel="stylesheet" href="css/styles.css">
-  
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
 
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 
     <script type="text/javascript">
-    (function(){
-        emailjs.init({
-            publicKey: "PlEwnOh8HWe7DIhX2",
-        });
-    })();
+        (function () {
+            emailjs.init({
+                publicKey: "PlEwnOh8HWe7DIhX2",
+            });
+        })();
     </script>
 
 
 
 </head>
+
 <body class="font-sans transition-colors duration-300">
- 
+
     <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 bg-transparent">
         <div class="container mx-auto px-6">
             <div class="flex justify-between items-center">
@@ -37,7 +36,7 @@
                     <span class="text-blue-300">Dev</span>Jamil Salomão
                 </a>
 
-               
+
                 <div class="hidden md:flex items-center space-x-8">
                     <nav class="flex space-x-8">
                         <a href="#hero" class="text-white hover:text-blue-300 transition duration-300">
@@ -72,24 +71,31 @@
                         </a>
                     </nav>
 
-                 
+
                     <button id="theme-toggle" class="text-white focus:outline-none" aria-label="Toggle theme">
-                     
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden dark:block" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                         </svg>
-                       
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block dark:hidden" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                         </svg>
                     </button>
 
-                
+
                     <div class="language-selector">
-                        <button id="language-toggle" class="text-white focus:outline-none flex items-center" aria-label="Change language">
+                        <button id="language-toggle" class="text-white focus:outline-none flex items-center"
+                            aria-label="Change language">
                             <span id="current-language">PT</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                         <div id="language-options" class="language-options">
@@ -100,26 +106,33 @@
                     </div>
                 </div>
 
-             
+
                 <div class="md:hidden flex items-center space-x-4">
-                 
+
                     <button id="theme-toggle-mobile" class="text-white focus:outline-none" aria-label="Toggle theme">
-                       
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden dark:block" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                         </svg>
-                        
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block dark:hidden" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                         </svg>
                     </button>
 
-                  
+
                     <div class="language-selector">
-                        <button id="language-toggle-mobile" class="text-white focus:outline-none flex items-center" aria-label="Change language">
+                        <button id="language-toggle-mobile" class="text-white focus:outline-none flex items-center"
+                            aria-label="Change language">
                             <span id="current-language-mobile">PT</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                         <div id="language-options-mobile" class="language-options">
@@ -129,17 +142,19 @@
                         </div>
                     </div>
 
-                   
+
                     <button id="menu-toggle" class="text-white focus:outline-none" aria-label="Toggle menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
             </div>
         </div>
 
-        
+
         <div id="mobile-menu" class="md:hidden bg-blue-800 dark:bg-gray-800 shadow-lg hidden">
             <nav class="flex flex-col py-4">
                 <a href="#hero" class="text-white hover:bg-blue-700 dark:hover:bg-gray-700 px-6 py-3 mobile-link">
@@ -176,10 +191,11 @@
         </div>
     </header>
 
-   
+
     <main class="min-h-screen dark:bg-gray-900 dark:text-white">
-       
-        <section id="hero" class="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-800 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-white">
+
+        <section id="hero"
+            class="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-800 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-white">
             <div class="programming-symbols-background absolute inset-0 overflow-hidden z-0"></div>
             <div class="absolute inset-0 opacity-20">
                 <div class="absolute inset-0 bg-cover bg-center"></div>
@@ -199,12 +215,14 @@
                     <span class="lang-es hidden">Analista de Sistemas & Desarrollador de Software</span>
                 </h2>
                 <div class="flex justify-center gap-4 hidden-element">
-                    <a href="#projects" class="bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                    <a href="#projects"
+                        class="bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
                         <span class="lang-pt">Ver Meu Trabalho</span>
                         <span class="lang-en hidden">View My Work</span>
                         <span class="lang-es hidden">Ver mi trabajo</span>
                     </a>
-                    <a href="#contact" class="bg-transparent hover:bg-blue-700 dark:hover:bg-blue-800 text-white font-bold py-3 px-6 border border-white hover:border-transparent rounded-full transition duration-300">
+                    <a href="#contact"
+                        class="bg-transparent hover:bg-blue-700 dark:hover:bg-blue-800 text-white font-bold py-3 px-6 border border-white hover:border-transparent rounded-full transition duration-300">
                         <span class="lang-pt">Contate-me</span>
                         <span class="lang-en hidden">Contact Me</span>
                         <span class="lang-es hidden">Contáctame</span>
@@ -213,19 +231,22 @@
             </div>
             <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
                 <a href="#about" class="text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                     </svg>
                 </a>
             </div>
         </section>
 
-       
+
         <section id="about" class="py-20 bg-white dark:bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="md:w-1/2 mb-10 md:mb-0 hidden-element">
-                        <img src="assets/img/Jamil.jpg" alt="Profile" class="rounded-full w-64 mx-auto object-cover border-4 border-blue-500 dark:border-blue-400 shadow-lg">
+                        <img src="assets/img/Jamil.jpg" alt="Profile"
+                            class="rounded-full w-64 mx-auto object-cover border-4 border-blue-500 dark:border-blue-400 shadow-lg">
                     </div>
                     <div class="md:w-1/2">
                         <h2 class="text-3xl font-bold mb-6 text-blue-800 dark:text-blue-400 hidden-element">
@@ -234,63 +255,100 @@
                             <span class="lang-es hidden">Sobre Mí</span>
                         </h2>
                         <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed hidden-element">
-                            <span class="lang-pt">Sou estudante de Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia com forte foco em desenvolvimento web.</span>
-                            <span class="lang-en hidden">I'm a Systems Analysis and Development student with a passion for technology and a strong focus on web development.</span>
-                            <span class="lang-es hidden">Soy estudiante de Análisis y Desarrollo de Sistemas y un apasionado de la tecnología con un fuerte enfoque en el desarrollo web.</span>
+                            <span class="lang-pt">Sou estudante de Análise e Desenvolvimento de Sistemas e apaixonado
+                                por tecnologia com forte foco em desenvolvimento web.</span>
+                            <span class="lang-en hidden">I'm a Systems Analysis and Development student with a passion
+                                for technology and a strong focus on web development.</span>
+                            <span class="lang-es hidden">Soy estudiante de Análisis y Desarrollo de Sistemas y un
+                                apasionado de la tecnología con un fuerte enfoque en el desarrollo web.</span>
                         </p>
                         <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed hidden-element">
-                            <span class="lang-pt">Ao longo da faculdade, venho me dedicando a projetos extensionistas que me ajudam a aplicar o que aprendo na prática e resolver problemas reais. Além disso, estou atualmente em estágio na área de desenvolvimento, onde tenho a oportunidade de aprimorar minhas habilidades diariamente.</span>
-                            <span class="lang-en hidden">Throughout college, I've been involved in extension projects that help me apply what I learn in practice and solve real problems. In addition, I'm currently doing an internship in development, where I have the opportunity to improve my skills on a daily basis.</span>
-                            <span class="lang-es hidden">A lo largo de la universidad, he participado en proyectos de extensión que me ayudan a aplicar lo que aprendo en la práctica y a resolver problemas reales. Además, actualmente estoy haciendo prácticas en desarrollo, donde tengo la oportunidad de perfeccionar mis habilidades a diario.</span>
+                            <span class="lang-pt">Ao longo da faculdade, venho me dedicando a projetos extensionistas
+                                que me ajudam a aplicar o que aprendo na prática e resolver problemas reais. Além disso,
+                                estou atualmente em estágio na área de desenvolvimento, onde tenho a oportunidade de
+                                aprimorar minhas habilidades diariamente.</span>
+                            <span class="lang-en hidden">Throughout college, I've been involved in extension projects
+                                that help me apply what I learn in practice and solve real problems. In addition, I'm
+                                currently doing an internship in development, where I have the opportunity to improve my
+                                skills on a daily basis.</span>
+                            <span class="lang-es hidden">A lo largo de la universidad, he participado en proyectos de
+                                extensión que me ayudan a aplicar lo que aprendo en la práctica y a resolver problemas
+                                reales. Además, actualmente estoy haciendo prácticas en desarrollo, donde tengo la
+                                oportunidad de perfeccionar mis habilidades a diario.</span>
                         </p>
                         <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed hidden-element">
-                            <span class="lang-pt">Minha principal área de atuação é o front-end, com foco em criar interfaces modernas, responsivas e acessíveis usando HTML, CSS, JavaScript, React e Tailwind.</span>
-                            <span class="lang-en hidden">My main area of expertise is the front-end, with a focus on creating modern, responsive and accessible interfaces using HTML, CSS, JavaScript, React and Tailwind.</span>
-                            <span class="lang-es hidden">Mi principal área de especialización es el front-end, con un enfoque en la creación de interfaces modernas, responsivas y accesibles utilizando HTML, CSS, JavaScript, React y Tailwind.</span>
+                            <span class="lang-pt">Minha principal área de atuação é o front-end, com foco em criar
+                                interfaces modernas, responsivas e acessíveis usando HTML, CSS, JavaScript, React e
+                                Tailwind.</span>
+                            <span class="lang-en hidden">My main area of expertise is the front-end, with a focus on
+                                creating modern, responsive and accessible interfaces using HTML, CSS, JavaScript, React
+                                and Tailwind.</span>
+                            <span class="lang-es hidden">Mi principal área de especialización es el front-end, con un
+                                enfoque en la creación de interfaces modernas, responsivas y accesibles utilizando HTML,
+                                CSS, JavaScript, React y Tailwind.</span>
                         </p>
                         <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed hidden-element">
-                            <span class="lang-pt">No estágio, também venho explorando outras áreas da programação, como back-end com Node.js e banco de dados com Firebase, o que tem ampliado minha visão como desenvolvedor e me tornado mais completo.</span>
-                            <span class="lang-en hidden">In my internship, I've also been exploring other areas of programming, such as back-end with Node.js and database with Firebase, which has broadened my vision as a developer and made me more complete.</span>
-                            <span class="lang-es hidden">Durante mis prácticas, también he estado explorando otras áreas de la programación, como el back-end con Node.js y las bases de datos con Firebase, lo que ha ampliado mi visión como desarrollador y me ha hecho más completo.</span>
+                            <span class="lang-pt">No estágio, também venho explorando outras áreas da programação, como
+                                back-end com Node.js e banco de dados com Firebase, o que tem ampliado minha visão como
+                                desenvolvedor e me tornado mais completo.</span>
+                            <span class="lang-en hidden">In my internship, I've also been exploring other areas of
+                                programming, such as back-end with Node.js and database with Firebase, which has
+                                broadened my vision as a developer and made me more complete.</span>
+                            <span class="lang-es hidden">Durante mis prácticas, también he estado explorando otras áreas
+                                de la programación, como el back-end con Node.js y las bases de datos con Firebase, lo
+                                que ha ampliado mi visión como desarrollador y me ha hecho más completo.</span>
                         </p>
                         <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed hidden-element">
-                            <span class="lang-pt">Estou sempre buscando evoluir, aprender novas tecnologias e participar de projetos que me desafiem a crescer constantemente. Se quiser trocar uma ideia ou dar alguma dica, será um prazer!</span>
-                            <span class="lang-en hidden">I'm always looking to evolve, learn new technologies and take part in projects that challenge me to grow constantly. If you'd like to exchange ideas or give me any tips, I'd be delighted!</span>
-                            <span class="lang-es hidden">Siempre busco evolucionar, aprender nuevas tecnologías y participar en proyectos que me desafíen a crecer constantemente. Si quieres intercambiar ideas o darme algún consejo, ¡estaré encantada!</span>
+                            <span class="lang-pt">Estou sempre buscando evoluir, aprender novas tecnologias e participar
+                                de projetos que me desafiem a crescer constantemente. Se quiser trocar uma ideia ou dar
+                                alguma dica, será um prazer!</span>
+                            <span class="lang-en hidden">I'm always looking to evolve, learn new technologies and take
+                                part in projects that challenge me to grow constantly. If you'd like to exchange ideas
+                                or give me any tips, I'd be delighted!</span>
+                            <span class="lang-es hidden">Siempre busco evolucionar, aprender nuevas tecnologías y
+                                participar en proyectos que me desafíen a crecer constantemente. Si quieres intercambiar
+                                ideas o darme algún consejo, ¡estaré encantada!</span>
                         </p>
 
                         <div class="flex flex-wrap gap-3 hidden-element">
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
+                            <span
+                                class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
                                 <span class="lang-pt">Desenvolvimento Web</span>
                                 <span class="lang-en hidden">Web Development</span>
                                 <span class="lang-es hidden">Desarrollo Web</span>
                             </span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
+                            <span
+                                class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
                                 <span class="lang-pt">Design UI/UX</span>
                                 <span class="lang-en hidden">UI/UX Design</span>
                                 <span class="lang-es hidden">Diseño UI/UX</span>
                             </span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
+                            <span
+                                class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
                                 <span class="lang-pt">Resolução de Problemas</span>
                                 <span class="lang-en hidden">Problem Solving</span>
                                 <span class="lang-es hidden">Resolución de Problemas</span>
                             </span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
+                            <span
+                                class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
                                 <span class="lang-pt">Trabalho em Equipe</span>
                                 <span class="lang-en hidden">Teamwork</span>
                                 <span class="lang-es hidden">Trabajo en Equipo</span>
                             </span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
+                            <span
+                                class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
                                 <span class="lang-pt">Análise de Sistemas</span>
                                 <span class="lang-en hidden">Systems Analysis</span>
                                 <span class="lang-es hidden">Análisis de Sistemas</span>
                             </span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
+                            <span
+                                class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
                                 <span class="lang-pt">Desenvolvimento de Software</span>
                                 <span class="lang-en hidden">Software Development</span>
                                 <span class="lang-es hidden">Desarrollo de Software</span>
                             </span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
+                            <span
+                                class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
                                 <span class="lang-pt">Full Stack</span>
                                 <span class="lang-en hidden">Full Stack</span>
                                 <span class="lang-es hidden">Full Stack</span>
@@ -301,120 +359,156 @@
             </div>
         </section>
 
-        
+
         <section id="skills" class="py-20 bg-blue-50 dark:bg-gray-800">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-12 text-center text-blue-800 dark:text-blue-400 hidden-element">
-            <span class="lang-pt">Minhas Habilidades</span>
-            <span class="lang-en hidden">My Skills</span>
-            <span class="lang-es hidden">Mis Habilidades</span>
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 hidden-element">
-                <div class="text-blue-600 dark:text-blue-400 mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold mb-2 text-blue-800 dark:text-blue-400">
-                    <span class="lang-pt">Desenvolvimento de Software</span>
-                    <span class="lang-en hidden">Software Development</span>
-                    <span class="lang-es hidden">Desarrollo de Software</span>
-                </h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-6">
-                    <span class="lang-pt">Criação de interfaces de usuário responsivas e interativas com tecnologias modernas.</span>
-                    <span class="lang-en hidden">Creating responsive and interactive user interfaces with modern technologies.</span>
-                    <span class="lang-es hidden">Creación de interfaces de usuario responsivas e interactivas con tecnologías modernas.</span>
-                </p>
-                
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">React</span>
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">Node.js</span>
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">HTML5</span>
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">CSS3</span>
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">JavaScript</span>
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">React Native</span>
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">Tailwind</span>                  
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">Git</span>
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">Firebase</span>
-                </div>
-            </div>
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12 text-center text-blue-800 dark:text-blue-400 hidden-element">
+                    <span class="lang-pt">Minhas Habilidades</span>
+                    <span class="lang-en hidden">My Skills</span>
+                    <span class="lang-es hidden">Mis Habilidades</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            
-            <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 hidden-element">
-                <div class="text-blue-600 dark:text-blue-400 mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold mb-2 text-blue-800 dark:text-blue-400">
-                    <span class="lang-pt">Análise de Sistemas</span>
-                    <span class="lang-en hidden">Systems Analysis</span>
-                    <span class="lang-es hidden">Análisis de Sistemas</span>
-                </h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-6">
-                    <span class="lang-pt">Análise de requisitos e design de arquiteturas de sistemas eficientes.</span>
-                    <span class="lang-en hidden">Analyzing requirements and designing efficient system architectures.</span>
-                    <span class="lang-es hidden">Análisis de requisitos y diseño de arquitecturas de sistemas eficientes.</span>
-                </p>
-                
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">
-                        <span class="lang-pt">Análise de Requisitos</span>
-                        <span class="lang-en hidden">Requirements Analysis</span>
-                        <span class="lang-es hidden">Análisis de los requisitos</span>
-                    </span>
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">UML</span>
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">
-                        <span class="lang-pt">Modelagem de Processos</span>
-                        <span class="lang-en hidden">Process Modeling</span>
-                        <span class="lang-es hidden">Modelización de procesos</span>
-                    </span>
-                </div>
-            </div>
+                    <div
+                        class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 hidden-element">
+                        <div class="text-blue-600 dark:text-blue-400 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-800 dark:text-blue-400">
+                            <span class="lang-pt">Desenvolvimento de Software</span>
+                            <span class="lang-en hidden">Software Development</span>
+                            <span class="lang-es hidden">Desarrollo de Software</span>
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            <span class="lang-pt">Criação de interfaces de usuário responsivas e interativas com
+                                tecnologias modernas.</span>
+                            <span class="lang-en hidden">Creating responsive and interactive user interfaces with modern
+                                technologies.</span>
+                            <span class="lang-es hidden">Creación de interfaces de usuario responsivas e interactivas
+                                con tecnologías modernas.</span>
+                        </p>
 
-           
-            <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 hidden-element">
-                <div class="text-blue-600 dark:text-blue-400 mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold mb-2 text-blue-800 dark:text-blue-400">
-                    <span class="lang-pt">Design UI/UX</span>
-                    <span class="lang-en hidden">UI/UX Design</span>
-                    <span class="lang-es hidden">Diseño UI/UX</span>
-                </h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-6">
-                    <span class="lang-pt">Criação de experiências de usuário intuitivas e visualmente atraentes.</span>
-                    <span class="lang-en hidden">Creating intuitive and visually appealing user experiences.</span>
-                    <span class="lang-es hidden">Creación de experiencias de usuario intuitivas y visualmente atractivas.</span>
-                </p>
-                
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">Wireframing</span>
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">
-                        <span class="lang-pt">Prototipagem</span>
-                        <span class="lang-en hidden">Prototyping</span>
-                        <span class="lang-es hidden">Creación de prototipos</span>
-                    </span>
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">
-                        <span class="lang-pt">Pesquisa de Usuário</span>
-                        <span class="lang-en hidden">User Search</span>
-                        <span class="lang-es hidden">Búsqueda de usuario</span>
-                    </span>
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">
-                        <span class="lang-pt">Design Responsivo</span>
-                        <span class="lang-en hidden">Responsive Design</span>
-                        <span class="lang-es hidden">Diseño Responsivo</span>
-                    </span>
-                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">Figma</span>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">React</span>
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">Node.js</span>
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">HTML5</span>
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">CSS3</span>
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">JavaScript</span>
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">React
+                                Native</span>
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">Tailwind</span>
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">Git</span>
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">Firebase</span>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 hidden-element">
+                        <div class="text-blue-600 dark:text-blue-400 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-800 dark:text-blue-400">
+                            <span class="lang-pt">Análise de Sistemas</span>
+                            <span class="lang-en hidden">Systems Analysis</span>
+                            <span class="lang-es hidden">Análisis de Sistemas</span>
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            <span class="lang-pt">Análise de requisitos e design de arquiteturas de sistemas
+                                eficientes.</span>
+                            <span class="lang-en hidden">Analyzing requirements and designing efficient system
+                                architectures.</span>
+                            <span class="lang-es hidden">Análisis de requisitos y diseño de arquitecturas de sistemas
+                                eficientes.</span>
+                        </p>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">
+                                <span class="lang-pt">Análise de Requisitos</span>
+                                <span class="lang-en hidden">Requirements Analysis</span>
+                                <span class="lang-es hidden">Análisis de los requisitos</span>
+                            </span>
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">UML</span>
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">
+                                <span class="lang-pt">Modelagem de Processos</span>
+                                <span class="lang-en hidden">Process Modeling</span>
+                                <span class="lang-es hidden">Modelización de procesos</span>
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 hidden-element">
+                        <div class="text-blue-600 dark:text-blue-400 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-800 dark:text-blue-400">
+                            <span class="lang-pt">Design UI/UX</span>
+                            <span class="lang-en hidden">UI/UX Design</span>
+                            <span class="lang-es hidden">Diseño UI/UX</span>
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            <span class="lang-pt">Criação de experiências de usuário intuitivas e visualmente
+                                atraentes.</span>
+                            <span class="lang-en hidden">Creating intuitive and visually appealing user
+                                experiences.</span>
+                            <span class="lang-es hidden">Creación de experiencias de usuario intuitivas y visualmente
+                                atractivas.</span>
+                        </p>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">Wireframing</span>
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">
+                                <span class="lang-pt">Prototipagem</span>
+                                <span class="lang-en hidden">Prototyping</span>
+                                <span class="lang-es hidden">Creación de prototipos</span>
+                            </span>
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">
+                                <span class="lang-pt">Pesquisa de Usuário</span>
+                                <span class="lang-en hidden">User Search</span>
+                                <span class="lang-es hidden">Búsqueda de usuario</span>
+                            </span>
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">
+                                <span class="lang-pt">Design Responsivo</span>
+                                <span class="lang-en hidden">Responsive Design</span>
+                                <span class="lang-es hidden">Diseño Responsivo</span>
+                            </span>
+                            <span
+                                class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-3 py-1.5 rounded-full text-sm">Figma</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
         <section id="timeline" class="py-20 bg-white dark:bg-gray-900">
@@ -424,9 +518,9 @@
                     <span class="lang-en hidden">My Journey</span>
                     <span class="lang-es hidden">Mi Trayectoria</span>
                 </h2>
-                
+
                 <div class="timeline-container max-w-3xl mx-auto">
-                    
+
                     <div class="timeline-item hidden-element">
                         <div class="timeline-dot"></div>
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
@@ -441,7 +535,7 @@
                                     <span class="lang-en hidden">Feb, 2022 - Jan, 2023</span>
                                     <span class="lang-es hidden">Feb, 2022 - ene, 2023</span>
                                 </span>
-                                
+
                             </div>
                             <h4 class="text-gray-700 dark:text-gray-300 font-medium mb-2">
                                 <span class="lang-pt">Exército Brasileiro</span>
@@ -449,14 +543,18 @@
                                 <span class="lang-es hidden">Ejército Brasileño</span>
                             </h4>
                             <p class="text-gray-600 dark:text-gray-400">
-                                <span class="lang-pt">Período em que desenvolvi disciplina, resiliência, foco em resultados e habilidade de trabalhar em equipe sob pressão. </span>
-                                <span class="lang-en hidden">A period in which I developed discipline, resilience, a focus on results and the ability to work in a team under pressure.</span>
-                                <span class="lang-es hidden">Un periodo en el que desarrollé la disciplina, la resistencia, la orientación a los resultados y la capacidad de trabajar en equipo bajo presión.</span>
+                                <span class="lang-pt">Período em que desenvolvi disciplina, resiliência, foco em
+                                    resultados e habilidade de trabalhar em equipe sob pressão. </span>
+                                <span class="lang-en hidden">A period in which I developed discipline, resilience, a
+                                    focus on results and the ability to work in a team under pressure.</span>
+                                <span class="lang-es hidden">Un periodo en el que desarrollé la disciplina, la
+                                    resistencia, la orientación a los resultados y la capacidad de trabajar en equipo
+                                    bajo presión.</span>
                             </p>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="timeline-item hidden-element">
                         <div class="timeline-dot"></div>
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
@@ -478,43 +576,52 @@
                                 <span class="lang-es hidden">Colegio Estácio de Sá Juiz de Fora-MG</span>
                             </h4>
                             <p class="text-gray-600 dark:text-gray-400">
-                                <span class="lang-pt">Graduação tecnológica em Análise e Desenvolvimento de Sistemas com foco em desenvolvimento de software e análise de sistemas.</span>
-                                <span class="lang-en hidden">Technological degree in Systems Analysis and Development with a focus on software development and systems analysis.</span>
-                                <span class="lang-es hidden">Titulación tecnológica en Análisis y Desarrollo de Sistemas con especialización en desarrollo de software y análisis de sistemas.</span>
+                                <span class="lang-pt">Graduação tecnológica em Análise e Desenvolvimento de Sistemas com
+                                    foco em desenvolvimento de software e análise de sistemas.</span>
+                                <span class="lang-en hidden">Technological degree in Systems Analysis and Development
+                                    with a focus on software development and systems analysis.</span>
+                                <span class="lang-es hidden">Titulación tecnológica en Análisis y Desarrollo de Sistemas
+                                    con especialización en desarrollo de software y análisis de sistemas.</span>
                             </p>
                         </div>
                     </div>
 
-                
-                        <div class="timeline-item hidden-element">
-                            <div class="timeline-dot"></div>
-                            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                                <div class="flex justify-between items-start mb-2">
-                                    <h3 class="text-xl font-bold text-blue-800 dark:text-blue-400">
-                                        <span class="lang-pt">Cursos e Certificações Complementares</span>
-                                        <span class="lang-en hidden">Complementary Courses and Certifications</span>
-                                        <span class="lang-es hidden">Cursos y certificaciones adicionales</span>
-                                    </h3>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400">
+
+                    <div class="timeline-item hidden-element">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-blue-800 dark:text-blue-400">
+                                    <span class="lang-pt">Cursos e Certificações Complementares</span>
+                                    <span class="lang-en hidden">Complementary Courses and Certifications</span>
+                                    <span class="lang-es hidden">Cursos y certificaciones adicionales</span>
+                                </h3>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">
                                     <span class="lang-pt">Jan, 2024 - Ago, 2025</span>
                                     <span class="lang-en hidden">jan, 2024 - Aug, 2025</span>
                                     <span class="lang-es hidden">jan, 2024 - Ago, 2025</span>
                                 </span>
-                                </div>
-                                <h4 class="text-gray-700 dark:text-gray-300 font-medium mb-2">
-                                    <span class="lang-pt">Desenvolvimento Web, SQL do básico ao avançado, React e entre outros</span>
-                                    <span class="lang-en hidden">Web development, SQL from basic to advanced, React and others</span>
-                                    <span class="lang-es hidden">Desarrollo web, SQL desde básico a avanzado, React y otros.</span>
-                                </h4>
-                                <p class="text-gray-600 dark:text-gray-400">
-                                    <span class="lang-pt">Certificações e cursos intensivos focados em prática de desenvolvimento fullstack.</span>
-                                    <span class="lang-en hidden">Certifications and intensive courses focused on fullstack development practice.</span>
-                                    <span class="lang-es hidden">Certificaciones y cursos intensivos centrados en la práctica del desarrollo fullstack.</span>
-                                </p>
                             </div>
-                        </div>  
+                            <h4 class="text-gray-700 dark:text-gray-300 font-medium mb-2">
+                                <span class="lang-pt">Desenvolvimento Web, SQL do básico ao avançado, React e entre
+                                    outros</span>
+                                <span class="lang-en hidden">Web development, SQL from basic to advanced, React and
+                                    others</span>
+                                <span class="lang-es hidden">Desarrollo web, SQL desde básico a avanzado, React y
+                                    otros.</span>
+                            </h4>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                <span class="lang-pt">Certificações e cursos intensivos focados em prática de
+                                    desenvolvimento fullstack.</span>
+                                <span class="lang-en hidden">Certifications and intensive courses focused on fullstack
+                                    development practice.</span>
+                                <span class="lang-es hidden">Certificaciones y cursos intensivos centrados en la
+                                    práctica del desarrollo fullstack.</span>
+                            </p>
+                        </div>
+                    </div>
 
-                  
+
                     <div class="timeline-item hidden-element">
                         <div class="timeline-dot"></div>
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
@@ -525,9 +632,9 @@
                                     <span class="lang-es hidden">Aprendiz informático</span>
                                 </h3>
                                 <span class="text-sm text-gray-500 dark:text-gray-400">
-                                    <span class="lang-pt">Ago, 2024 - Presente</span>
-                                    <span class="lang-en hidden">Aug, 2024 - Present</span>
-                                    <span class="lang-es hidden">Ago, 2024 - Actualidad</span>
+                                    <span class="lang-pt">Ago, 2024 - Dez, 2025</span>
+                                    <span class="lang-en hidden">Aug, 2024 - Dec, 2025</span>
+                                    <span class="lang-es hidden">Ago, 2024 - Dic, 2025</span>
                                 </span>
                             </div>
                             <h4 class="text-gray-700 dark:text-gray-300 font-medium mb-2">
@@ -536,9 +643,15 @@
                                 <span class="lang-es hidden">Instituto Nacional de la Seguridad Social - INSS</span>
                             </h4>
                             <p class="text-gray-600 dark:text-gray-400">
-                                <span class="lang-pt">Atuação no desenvolvimento de sistemas, suporte técnico a usuários e manutenção de redes de computadores, aplicando tecnologias web e boas práticas de programação.</span>
-                                <span class="lang-en hidden">Working on systems development, technical support for users and maintenance of computer networks, applying web technologies and good programming practices.</span>
-                                <span class="lang-es hidden">Trabajar en el desarrollo de sistemas, soporte técnico a usuarios y mantenimiento de redes informáticas, aplicando tecnologías web y buenas prácticas de programación.</span>
+                                <span class="lang-pt">Atuação no desenvolvimento de sistemas, suporte técnico a usuários
+                                    e manutenção de redes de computadores, aplicando tecnologias web e boas práticas de
+                                    programação.</span>
+                                <span class="lang-en hidden">Working on systems development, technical support for users
+                                    and maintenance of computer networks, applying web technologies and good programming
+                                    practices.</span>
+                                <span class="lang-es hidden">Trabajar en el desarrollo de sistemas, soporte técnico a
+                                    usuarios y mantenimiento de redes informáticas, aplicando tecnologías web y buenas
+                                    prácticas de programación.</span>
                             </p>
                         </div>
                     </div>
@@ -554,205 +667,497 @@
                     <span class="lang-es hidden">Mis Proyectos</span>
                 </h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Grid Container -->
+                <div id="projects-grid"
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[850px] md:min-h-[500px]">
+                    <!-- Projects are populated here (existing HTML items) -->
 
-                    
-                    <div class="project-item bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hidden-element" data-category="systems,frontend">
-                        <img src="assets/img/BiblioTech.png" alt="Project 1" class="w-full h-46 object-cover">
-                        <div class="p-6">
+
+
+                    <div class="project-item bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hidden-element flex flex-col h-full"
+                        data-category="systems,frontend">
+                        <img src="assets/img/BiblioTech.png" alt="Project 1"
+                            class="w-full h-48 object-cover object-top">
+                        <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-2 text-blue-800 dark:text-blue-400">
                                 <span class="lang-pt">Projeto BiblioTech</span>
                                 <span class="lang-en hidden">BiblioTech Project</span>
                                 <span class="lang-es hidden">Proyecto BiblioTech</span>
-                                </h3>
+                            </h3>
                             <p class="text-gray-600 dark:text-gray-400 mb-4">
-                                <span class="lang-pt">Projeto desenvolvido para ser feita a divulgação de livros e influenciadores da área Tech. O projeto tem como objetivo fazer a divulgação de livros onde pode ser feito estudo mais aprofundado sobre algumas tecnologias ou linguagens de programação, e se achar melhor e mais intuitivo do que os livros, temos as indicações dos influenciadores.</span>
-                                <span class="lang-en hidden">Project designed to promote books and influencers in the Tech area. The aim of the project is to promote books where you can study some technologies or programming languages in more depth, and if you think it's better and more intuitive than the books, we'll recommend the influencers.</span>
-                                <span class="lang-es hidden">Proyecto diseñado para dar a conocer libros e influencers en el área Tech. El objetivo del proyecto es dar a conocer libros donde profundizar en algunas tecnologías o lenguajes de programación, y si te parece mejor y más intuitivo que los libros, te recomendaremos los influencers.</span>
+                                <span class="lang-pt">Projeto desenvolvido para ser feita a divulgação de livros e
+                                    influenciadores da área Tech. O projeto tem como objetivo fazer a divulgação de
+                                    livros onde pode ser feito estudo mais aprofundado sobre algumas tecnologias ou
+                                    linguagens de programação, e se achar melhor e mais intuitivo do que os livros,
+                                    temos as indicações dos influenciadores.</span>
+                                <span class="lang-en hidden">Project designed to promote books and influencers in
+                                    the
+                                    Tech area. The aim of the project is to promote books where you can study some
+                                    technologies or programming languages in more depth, and if you think it's
+                                    better
+                                    and more intuitive than the books, we'll recommend the influencers.</span>
+                                <span class="lang-es hidden">Proyecto diseñado para dar a conocer libros e
+                                    influencers
+                                    en el área Tech. El objetivo del proyecto es dar a conocer libros donde
+                                    profundizar
+                                    en algunas tecnologías o lenguajes de programación, y si te parece mejor y más
+                                    intuitivo que los libros, te recomendaremos los influencers.</span>
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">HTML</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Tailwind CSS</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Javascript</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Vite</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Git</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Figma</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">HTML</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Tailwind
+                                    CSS</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Javascript</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Vite</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Git</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Figma</span>
                             </div>
-                            <div class="flex justify-between">
-                                <a href="https://github.com/jamilsalomao/tech-book-site" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+                            <div class="flex justify-between items-center mt-auto">
+                                <a href="https://github.com/jamilsalomao/tech-book-site" target="_blank"
+                                    class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
                                     <span class="lang-pt">Código Fonte</span>
                                     <span class="lang-en hidden">Source Code</span>
                                     <span class="lang-es hidden">Código Fuente</span>
                                 </a>
-                            </div>
-                            <div class="flex justify-between">
-                                <a href="https://bibliotechthree.vercel.app/" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
-                                    <span class="lang-pt">Visite o Website</span>
-                                    <span class="lang-en hidden">visit the website</span>
-                                    <span class="lang-es hidden">visite el sitio web</span>
+                                <a href="https://bibliotechthree.vercel.app/" target="_blank"
+                                    class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+                                    <span class="lang-pt">Visite o Site</span>
+                                    <span class="lang-en hidden">Visit Website</span>
+                                    <span class="lang-es hidden">Visitar Sitio</span>
                                 </a>
-
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-item bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hidden-element" data-category="frontend,uiux">
-                        <img src="assets/img/FluxoPositivo.PNG" alt="Project 2" class="w-full h-46 object-cover">
-                        <div class="p-6">
+
+                    <div class="project-item bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hidden-element flex flex-col h-full"
+                        data-category="mobile,systems">
+                        <div
+                            class="h-64 bg-gray-100 dark:bg-gray-800 flex items-center justify-center overflow-hidden p-4">
+                            <!-- Phone Mockup Container -->
+                            <div
+                                class="relative w-32 h-56 bg-gray-900 rounded-[2rem] border-[4px] border-gray-800 shadow-xl overflow-hidden ring-1 ring-gray-700">
+                                <!-- Dynamic Island / Notch -->
+                                <div
+                                    class="absolute top-2 left-1/2 transform -translate-x-1/2 w-10 h-3 bg-black rounded-full z-20">
+                                </div>
+                                <!-- Screen Content -->
+                                <img src="assets/img/EzzyApp.jpg" alt="Ezzy App"
+                                    class="w-full h-full object-cover object-top z-10">
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold mb-2 text-blue-800 dark:text-blue-400">
+                                <span class="lang-pt">Ezzy App - Gestão de Clientes</span>
+                                <span class="lang-en hidden">Ezzy App - Client Management</span>
+                                <span class="lang-es hidden">Ezzy App - Gestión de Clientes</span>
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">
+                                <span class="lang-pt">Aplicativo mobile para gestão de relacionamento com clientes
+                                    (CRM), permitindo organizar serviços, acompanhar equipes e gerar relatórios em
+                                    PDF.
+                                    Foco em profissionalismo e produtividade.</span>
+                                <span class="lang-en hidden">Mobile CRM app for customer relationship management,
+                                    allowing you to organize services, track teams, and generate PDF reports. Focus
+                                    on
+                                    professionalism and productivity.</span>
+                                <span class="lang-es hidden">Aplicación CRM móvil para gestión de relaciones con
+                                    clientes, permitiendo organizar servicios, seguir equipos y generar reportes
+                                    PDF.
+                                    Enfoque en profesionalismo y productividad.</span>
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">React
+                                    Native</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Expo</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Firebase
+                                    Auth</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Firestore</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-auto">
+                                <span class="text-gray-400 text-sm italic">
+                                    <span class="lang-pt">Código Fonte: Privado</span>
+                                    <span class="lang-en hidden">Source Code: Private</span>
+                                    <span class="lang-es hidden">Código Fuente: Privado</span>
+                                </span>
+                                <a href="https://expo.dev/artifacts/eas/8cSSVo4dvu1guv5gc99a3k.apk"
+                                    class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+                                    <span class="lang-pt">Download APK</span>
+                                    <span class="lang-en hidden">Download APK</span>
+                                    <span class="lang-es hidden">Descargar APK</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hidden-element flex flex-col h-full"
+                        data-category="frontend,uiux">
+                        <img src="assets/img/EzzyLandingPage.png" alt="Landing page Ezzy App"
+                            class="w-full h-48 object-cover object-top">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold mb-2 text-blue-800 dark:text-blue-400">
+                                <span class="lang-pt">Landing page Ezzy App</span>
+                                <span class="lang-en hidden">Ezzy App Landing Page</span>
+                                <span class="lang-es hidden">Landing page de Ezzy App</span>
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">
+                                <span class="lang-pt">Uma landing page moderna desenvolvida para apresentar e divulgar
+                                    o aplicativo Ezzy App. Foco em design responsivo, alta conversão e performance
+                                    para atrair novos usuários.</span>
+                                <span class="lang-en hidden">A modern landing page developed to showcase and promote
+                                    the Ezzy App. Focus on responsive design, high conversion, and performance to
+                                    attract new users.</span>
+                                <span class="lang-es hidden">Una landing page moderna desarrollada para presentar y
+                                    promocionar la aplicación Ezzy App. Enfoque en diseño responsivo, alta conversión y
+                                    rendimiento para atraer nuevos usuarios.</span>
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">React</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Tailwind
+                                    CSS</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Vite</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Figma</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Git</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-auto">
+                                <a href="https://github.com/jamilsalomao/ezzy-landing-page" target="_blank"
+                                    class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+                                    <span class="lang-pt">Código Fonte</span>
+                                    <span class="lang-en hidden">Source Code</span>
+                                    <span class="lang-es hidden">Código Fuente</span>
+                                </a>
+                                <a href="https://ezzyapppage.vercel.app/" target="_blank"
+                                    class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+                                    <span class="lang-pt">Visite o Site</span>
+                                    <span class="lang-en hidden">Visit Website</span>
+                                    <span class="lang-es hidden">Visitar Sitio</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hidden-element flex flex-col h-full"
+                        data-category="frontend,uiux">
+                        <img src="assets/img/FluxoPositivo.PNG" alt="Project 2"
+                            class="w-full h-48 object-cover object-top">
+                        <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-2 text-blue-800 dark:text-blue-400">
                                 <span class="lang-pt">Projeto Controle Financeiro</span>
                                 <span class="lang-en hidden">Financial Control Project</span>
-                                <span class="lang-es hidden">Proyecto de Control Financiero</span>   
+                                <span class="lang-es hidden">Proyecto de Control Financiero</span>
                             </h3>
                             <p class="text-gray-600 dark:text-gray-400 mb-4">
-                                <span class="lang-pt">Este é um projeto desenvolvido como parte de um trabalho acadêmico para criar uma aplicação web de gestão financeira. O sistema tem como objetivo simplificar e modernizar a gestão financeira que muitas vezes é feita em uma planilha, podendo assim ter maior controle de seus gastos e de suas finanças.</span>
-                                <span class="lang-en hidden">This is a project developed as part of an academic assignment to create a financial management web application. The system aims to simplify and modernize financial management, which is often done in a spreadsheet, so that you can have greater control of your spending and finances.</span>
-                                <span class="lang-es hidden">Este es un proyecto desarrollado como parte de un trabajo académico para crear una aplicación web de gestión financiera. El sistema pretende simplificar y modernizar la gestión financiera, que a menudo se realiza en una hoja de cálculo, para que puedas tener un mayor control de tus gastos y finanzas.</span>
+                                <span class="lang-pt">Este é um projeto desenvolvido como parte de um trabalho
+                                    acadêmico
+                                    para criar uma aplicação web de gestão financeira. O sistema tem como objetivo
+                                    simplificar e modernizar a gestão financeira que muitas vezes é feita em uma
+                                    planilha, podendo assim ter maior controle de seus gastos e de suas
+                                    finanças.</span>
+                                <span class="lang-en hidden">This is a project developed as part of an academic
+                                    assignment to create a financial management web application. The system aims to
+                                    simplify and modernize financial management, which is often done in a
+                                    spreadsheet,
+                                    so that you can have greater control of your spending and finances.</span>
+                                <span class="lang-es hidden">Este es un proyecto desarrollado como parte de un
+                                    trabajo
+                                    académico para crear una aplicación web de gestión financiera. El sistema
+                                    pretende
+                                    simplificar y modernizar la gestión financiera, que a menudo se realiza en una
+                                    hoja
+                                    de cálculo, para que puedas tener un mayor control de tus gastos y
+                                    finanzas.</span>
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">HTML</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">CSS</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">JavaScript</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">UI/UX</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Firebase</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Git</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">HTML</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">CSS</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">JavaScript</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">UI/UX</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Firebase</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Git</span>
                             </div>
-                            <div class="flex justify-between">
-                                <a href="https://github.com/ExtraProjects860/Project-Financial-Management/tree/main" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+                            <div class="flex justify-between items-center mt-auto">
+                                <a href="https://github.com/ExtraProjects860/Project-Financial-Management/tree/main"
+                                    target="_blank"
+                                    class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
                                     <span class="lang-pt">Código Fonte</span>
                                     <span class="lang-en hidden">Source Code</span>
                                     <span class="lang-es hidden">Código Fuente</span>
                                 </a>
+                                <span class="text-gray-400 text-sm italic">
+                                    <span class="lang-pt">Site Indisponível</span>
+                                    <span class="lang-en hidden">Website Unavailable</span>
+                                    <span class="lang-es hidden">Sitio No Disponible</span>
+                                </span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-item bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hidden-element" data-category="frontend,uiux">
-                        <img src="assets/img/QuantumPages.png" alt="Project 3" class="w-full h-46 object-cover">
-                        <div class="p-6">
+                    <div class="project-item bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hidden-element flex flex-col h-full"
+                        data-category="frontend,uiux">
+                        <img src="assets/img/QuantumPages.png" alt="Project 3"
+                            class="w-full h-48 object-cover object-top">
+                        <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-2 text-blue-800 dark:text-blue-400">
                                 <span class="lang-pt">Projeto QuantumPages</span>
                                 <span class="lang-en hidden">QuantumPages Project</span>
-                                <span class="lang-es hidden">Proyecto QuantumPages</span>   
+                                <span class="lang-es hidden">Proyecto QuantumPages</span>
                             </h3>
                             <p class="text-gray-600 dark:text-gray-400 mb-4">
-                                <span class="lang-pt">Este é um projeto em desenvolvimento de uma Landing Page com objetivo de divulgação do trabalho da empresa para possiveis contratações de serviços que a empresa produz.</span>
-                                <span class="lang-en hidden">This is a project under development for a Landing Page with the objective of promoting the company's work for possible hiring of services that the company produces.</span>
-                                <span class="lang-es hidden">Este es un proyecto en desarrollo para una Landing Page con el objetivo de promocionar el trabajo de la empresa para posibles contrataciones de servicios que la empresa produce.</span>
+                                <span class="lang-pt">Este é um projeto em desenvolvimento de uma Landing Page com
+                                    objetivo de divulgação do trabalho da empresa para possiveis contratações de
+                                    serviços que a empresa produz.</span>
+                                <span class="lang-en hidden">This is a project under development for a Landing Page
+                                    with
+                                    the objective of promoting the company's work for possible hiring of services
+                                    that
+                                    the company produces.</span>
+                                <span class="lang-es hidden">Este es un proyecto en desarrollo para una Landing Page
+                                    con
+                                    el objetivo de promocionar el trabajo de la empresa para posibles contrataciones
+                                    de
+                                    servicios que la empresa produce.</span>
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">HTML</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Tailwind CSS</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">JavaScript</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">UI/UX</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">CSS</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Git</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">HTML</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Tailwind
+                                    CSS</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">JavaScript</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">UI/UX</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">CSS</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Git</span>
                             </div>
-                            <div class="flex justify-between">
-                                <a href="https://github.com/jamilsalomao/quantumPages" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+                            <div class="flex justify-between items-center mt-auto">
+                                <a href="https://github.com/jamilsalomao/quantumPages" target="_blank"
+                                    class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
                                     <span class="lang-pt">Código Fonte</span>
                                     <span class="lang-en hidden">Source Code</span>
                                     <span class="lang-es hidden">Código Fuente</span>
                                 </a>
+                                <span class="text-gray-400 text-sm italic">
+                                    <span class="lang-pt">Em Desenvolvimento</span>
+                                    <span class="lang-en hidden">In Development</span>
+                                    <span class="lang-es hidden">En Desarrollo</span>
+                                </span>
                             </div>
                         </div>
                     </div>
 
-    
-                    <div class="project-item bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hidden-element" data-category="systems,frontend">
-                        <img src="assets/img/WebCertificados.jpg" alt="Project 4" class="w-full h-46 object-cover">
-                        <div class="p-6">
+
+                    <div class="project-item bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hidden-element flex flex-col h-full"
+                        data-category="systems,frontend">
+                        <img src="assets/img/WebCertificados.jpg" alt="Project 4"
+                            class="w-full h-48 object-cover object-top">
+                        <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-2 text-blue-800 dark:text-blue-400">
                                 <span class="lang-pt">Projeto Controle de Processo Seletivo</span>
                                 <span class="lang-en hidden">Selection Process Control Project</span>
                                 <span class="lang-es hidden">Proyecto de Control del Proceso de Selección</span>
-                                </h3>
+                            </h3>
                             <p class="text-gray-600 dark:text-gray-400 mb-4">
-                                <span class="lang-pt">Este é um projeto desenvolvido como parte de um trabalho acadêmico para criar um sistema de controle de processos seletivos para a empresa WebCertificados. O sistema tem como objetivo simplificar e modernizar para que os funcionários do RH tenham um controle melhor para contratação de novos funcionários.</span>
-                                <span class="lang-en hidden">This is a project developed as part of an academic assignment to create a selection process control system for the WebCertificados company. The system aims to simplify and modernize so that HR staff have better control when hiring new employees.</span>
-                                <span class="lang-es hidden">Este es un proyecto desarrollado como parte de un trabajo académico para crear un sistema de control de procesos de selección para la empresa WebCertificados. El sistema pretende simplificar y modernizar para que el personal de RRHH tenga un mejor control a la hora de contratar nuevos empleados.</span>
+                                <span class="lang-pt">Este é um projeto desenvolvido como parte de um trabalho
+                                    acadêmico
+                                    para criar um sistema de controle de processos seletivos para a empresa
+                                    WebCertificados. O sistema tem como objetivo simplificar e modernizar para que
+                                    os
+                                    funcionários do RH tenham um controle melhor para contratação de novos
+                                    funcionários.</span>
+                                <span class="lang-en hidden">This is a project developed as part of an academic
+                                    assignment to create a selection process control system for the WebCertificados
+                                    company. The system aims to simplify and modernize so that HR staff have better
+                                    control when hiring new employees.</span>
+                                <span class="lang-es hidden">Este es un proyecto desarrollado como parte de un
+                                    trabajo
+                                    académico para crear un sistema de control de procesos de selección para la
+                                    empresa
+                                    WebCertificados. El sistema pretende simplificar y modernizar para que el
+                                    personal
+                                    de RRHH tenga un mejor control a la hora de contratar nuevos empleados.</span>
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">UI/UX</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">React</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Node.js</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">React Bootstrap</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Git</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">UI/UX</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">React</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Node.js</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">React
+                                    Bootstrap</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Git</span>
                             </div>
-                            <div class="flex justify-between">
-                                <a href="https://github.com/ExtraProjects860/Project-Selection-Process-Control" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+                            <div class="flex justify-between items-center mt-auto">
+                                <a href="https://github.com/ExtraProjects860/Project-Selection-Process-Control"
+                                    target="_blank"
+                                    class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
                                     <span class="lang-pt">Código Fonte</span>
                                     <span class="lang-en hidden">Source Code</span>
                                     <span class="lang-es hidden">Código Fuente</span>
                                 </a>
+                                <span class="text-gray-400 text-sm italic">
+                                    <span class="lang-pt">Acesso Restrito</span>
+                                    <span class="lang-en hidden">Restricted Access</span>
+                                    <span class="lang-es hidden">Acceso Restringido</span>
+                                </span>
                             </div>
                         </div>
                     </div>
 
-                    
-                    <div class="project-item bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hidden-element" data-category="uiux,systems">
-                        <img src="assets/img/GCF.png" alt="Project 5" class="w-full h-46 object-cover">
-                        <div class="p-6">
+
+                    <div class="project-item bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hidden-element flex flex-col h-full"
+                        data-category="uiux,systems">
+                        <img src="assets/img/GCF.png" alt="Project 5" class="w-full h-48 object-cover object-top">
+                        <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-2 text-blue-800 dark:text-blue-400">
                                 <span class="lang-pt">Gerenciamento de Controle de Férias</span>
                                 <span class="lang-en hidden">Vacation Control Management Project</span>
                                 <span class="lang-es hidden">Proyecto de gestión del control de vacaciones</span>
                             </h3>
                             <p class="text-gray-600 dark:text-gray-400 mb-4">
-                                <span class="lang-pt">Um sistema de gestão e controle de férias para os servidores do INSS. (Sistema interno sem código fonte ou pagina para visualização disponivel).</span>
-                                <span class="lang-en hidden">A vacation management and control system for INSS employees (internal system with no source code or viewing page available).</span>
-                                <span class="lang-es hidden">Un sistema de gestión y control de las vacaciones de los empleados del INSS (sistema interno sin código fuente ni página de visualización disponibles).</span>
+                                <span class="lang-pt">Um sistema de gestão e controle de férias para os servidores
+                                    do
+                                    INSS. (Sistema interno sem código fonte ou pagina para visualização
+                                    disponivel).</span>
+                                <span class="lang-en hidden">A vacation management and control system for INSS
+                                    employees
+                                    (internal system with no source code or viewing page available).</span>
+                                <span class="lang-es hidden">Un sistema de gestión y control de las vacaciones de
+                                    los
+                                    empleados del INSS (sistema interno sin código fuente ni página de visualización
+                                    disponibles).</span>
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">HTML</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">React</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Node.Js</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Figma</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Firebase</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Tailwind CSS</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">EmailJs</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Git</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">HTML</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">React</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Node.Js</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Figma</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Firebase</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Tailwind
+                                    CSS</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">EmailJs</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Git</span>
                             </div>
-                            <div class="flex justify-between">
+                            <div class="flex justify-between items-center mt-auto">
+                                <span class="text-gray-400 text-sm italic">
+                                    <span class="lang-pt">Código Fonte: Privado</span>
+                                    <span class="lang-en hidden">Source Code: Private</span>
+                                    <span class="lang-es hidden">Código Fuente: Privado</span>
+                                </span>
+                                <span class="text-gray-400 text-sm italic">
+                                    <span class="lang-pt">Acesso Restrito</span>
+                                    <span class="lang-en hidden">Restricted Access</span>
+                                    <span class="lang-es hidden">Acceso Restringido</span>
+                                </span>
                             </div>
                         </div>
                     </div>
 
-                    
-                    <div class="project-item bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hidden-element" data-category="systems,frontend">
-                        <img src="assets/img/IdleClickerGame.png" alt="Project 6" class="w-full h-46 object-cover">
-                        <div class="p-6">
+
+                    <div class="project-item bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hidden-element flex flex-col h-full"
+                        data-category="systems,frontend">
+                        <img src="assets/img/IdleClickerGame.png" alt="Project 6"
+                            class="w-full h-48 object-cover object-top">
+                        <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-2 text-blue-800 dark:text-blue-400">
                                 <span class="lang-pt">Projeto Idle Clicker Game</span>
                                 <span class="lang-en hidden">Project Idle Clicker Game</span>
                                 <span class="lang-es hidden">Proyecto Idle Clicker Game</span>
-                                </h3>
+                            </h3>
                             <p class="text-gray-600 dark:text-gray-400 mb-4">
-                                <span class="lang-pt">Jogo Idle Clicker desenvolvido na semana da computação da Universidade Federal de Juiz de Fora.</span>
-                                <span class="lang-en hidden">Idle Clicker game developed during the Computing Week at the Federal University of Juiz de Fora.</span>
-                                <span class="lang-es hidden">Juego Idle Clicker desarrollado durante la Semana de la Informática de la Universidad Federal de Juiz de Fora.</span>
+                                <span class="lang-pt">Jogo Idle Clicker desenvolvido na semana da computação da
+                                    Universidade Federal de Juiz de Fora.</span>
+                                <span class="lang-en hidden">Idle Clicker game developed during the Computing Week
+                                    at
+                                    the Federal University of Juiz de Fora.</span>
+                                <span class="lang-es hidden">Juego Idle Clicker desarrollado durante la Semana de la
+                                    Informática de la Universidad Federal de Juiz de Fora.</span>
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">React</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">CSS</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Typescript</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Vite</span>
-                                <span class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Git</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">React</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">CSS</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Typescript</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Vite</span>
+                                <span
+                                    class="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded text-xs">Git</span>
                             </div>
-                            <div class="flex justify-between">
-                                <a href="https://github.com/jamilsalomao/Idle-Clicker-Game/tree/main" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+                            <div class="flex justify-between items-center mt-auto">
+                                <a href="https://github.com/jamilsalomao/Idle-Clicker-Game/tree/main" target="_blank"
+                                    class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
                                     <span class="lang-pt">Código Fonte</span>
                                     <span class="lang-en hidden">Source Code</span>
                                     <span class="lang-es hidden">Código Fuente</span>
                                 </a>
+                                <span class="text-gray-400 text-sm italic">
+                                    <span class="lang-pt">Site Indisponível</span>
+                                    <span class="lang-en hidden">Website Unavailable</span>
+                                    <span class="lang-es hidden">Sitio No Disponible</span>
+                                </span>
                             </div>
                         </div>
                     </div>
+
+
+
+
+                </div> <!-- End Project Grid -->
+
+                <!-- Pagination Controls -->
+                <div class="flex justify-center items-center mt-12 space-x-4 hidden-element" id="pagination-controls">
+                    <button id="prev-page"
+                        class="px-4 py-2 bg-blue-600 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-chevron-left mr-2"></i> Anterior
+                    </button>
+                    <span id="page-indicator" class="text-gray-700 dark:text-gray-300 font-medium">Page 1 of
+                        X</span>
+                    <button id="next-page"
+                        class="px-4 py-2 bg-blue-600 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-blue-700 transition-colors">
+                        Próximo <i class="fas fa-chevron-right ml-2"></i>
+                    </button>
                 </div>
+
+
             </div>
         </section>
 
-        
         <section id="contact" class="py-20 bg-blue-800 dark:bg-gray-900 text-white">
             <div class="container mx-auto px-6">
                 <h2 class="text-4xl font-bold mb-12 text-center hidden-element">
@@ -770,25 +1175,32 @@
                         </h3>
                         <div class="space-y-4">
                             <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-300" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
                                 <span>jamilsalomao2003@gmail.com</span>
                             </div>
                             <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-300" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                 </svg>
                                 <span>+55 (32) 99862-2603</span>
                             </div>
                             <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-300" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
                                 <span>Juiz de Fora, Minas Gerais,
-                                </svg>
-                                <span>Brasil</span>
+                                    </svg>
+                                    <span>Brasil</span>
                             </div>
                         </div>
 
@@ -798,27 +1210,31 @@
                             <span class="lang-es hidden">Redes Sociales</span>
                         </h3>
                         <div class="flex space-x-4">
-                            
-                            <a href="https://instagram.com/jamilsalomao_" target="_blank" class="bg-pink-500 hover:bg-pink-600 dark:bg-pink-600 dark:hover:bg-pink-500 h-10 w-10 rounded-full flex items-center justify-center transition duration-300">
-                              <i class="fab fa-instagram text-white text-lg"></i>
+
+                            <a href="https://instagram.com/jamilsalomao_" target="_blank"
+                                class="bg-pink-500 hover:bg-pink-600 dark:bg-pink-600 dark:hover:bg-pink-500 h-10 w-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-instagram text-white text-lg"></i>
                             </a>
-                          
-                            
-                            <a href="https://linkedin.com/in/jamil-salomao" target="_blank" class="bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 h-10 w-10 rounded-full flex items-center justify-center transition duration-300">
-                              <i class="fab fa-linkedin-in text-white text-lg"></i>
+
+
+                            <a href="https://linkedin.com/in/jamil-salomao" target="_blank"
+                                class="bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 h-10 w-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-linkedin-in text-white text-lg"></i>
                             </a>
-                          
-                            
-                            <a href="https://github.com/jamilsalomao" target="_blank" class="bg-gray-800 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600 h-10 w-10 rounded-full flex items-center justify-center transition duration-300">
-                              <i class="fab fa-github text-white text-lg"></i>
+
+
+                            <a href="https://github.com/jamilsalomao" target="_blank"
+                                class="bg-gray-800 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600 h-10 w-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-github text-white text-lg"></i>
                             </a>
-                          
-                            
-                            <a href="https://wa.me/5532998622603" target="_blank" class="bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-500 h-10 w-10 rounded-full flex items-center justify-center transition duration-300">
-                              <i class="fab fa-whatsapp text-white text-lg"></i>
+
+
+                            <a href="https://wa.me/5532998622603" target="_blank"
+                                class="bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-500 h-10 w-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-whatsapp text-white text-lg"></i>
                             </a>
-                          </div>
-                          
+                        </div>
+
                     </div>
 
                     <div class="hidden-element">
@@ -834,17 +1250,11 @@
                                     <span class="lang-en hidden">Name</span>
                                     <span class="lang-es hidden">Nombre</span>
                                 </label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
+                                <input type="text" id="name" name="name"
                                     class="w-full px-4 py-2 border border-blue-300 dark:border-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:text-white dark:bg-gray-800"
-                                    placeholder="Seu Nome"
-                                    data-lang-placeholder-pt="Seu Nome"
-                                    data-lang-placeholder-en="Your Name"
-                                    data-lang-placeholder-es="Tu Nombre"
-                                    required
-                                />
+                                    placeholder="Seu Nome" data-lang-placeholder-pt="Seu Nome"
+                                    data-lang-placeholder-en="Your Name" data-lang-placeholder-es="Tu Nombre"
+                                    required />
                                 <div class="error-feedback hidden text-red-500 text-sm mt-1"></div>
                             </div>
                             <div>
@@ -853,17 +1263,11 @@
                                     <span class="lang-en hidden">Email</span>
                                     <span class="lang-es hidden">Correo</span>
                                 </label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
+                                <input type="email" id="email" name="email"
                                     class="w-full px-4 py-2 border border-blue-300 dark:border-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:text-white dark:bg-gray-800"
-                                    placeholder="Seu Email"
-                                    data-lang-placeholder-pt="Seu Email"
-                                    data-lang-placeholder-en="Your Email"
-                                    data-lang-placeholder-es="Tu Correo"
-                                    required
-                                />
+                                    placeholder="Seu Email" data-lang-placeholder-pt="Seu Email"
+                                    data-lang-placeholder-en="Your Email" data-lang-placeholder-es="Tu Correo"
+                                    required />
                                 <div class="error-feedback hidden text-red-500 text-sm mt-1"></div>
                             </div>
                             <div>
@@ -872,17 +1276,10 @@
                                     <span class="lang-en hidden">Subject</span>
                                     <span class="lang-es hidden">Asunto</span>
                                 </label>
-                                <input
-                                    type="text"
-                                    id="subject"
-                                    name="subject"
+                                <input type="text" id="subject" name="subject"
                                     class="w-full px-4 py-2 border border-blue-300 dark:border-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:text-white dark:bg-gray-800"
-                                    placeholder="Assunto"
-                                    data-lang-placeholder-pt="Assunto"
-                                    data-lang-placeholder-en="Subject"
-                                    data-lang-placeholder-es="Asunto"
-                                    required
-                                />
+                                    placeholder="Assunto" data-lang-placeholder-pt="Assunto"
+                                    data-lang-placeholder-en="Subject" data-lang-placeholder-es="Asunto" required />
                                 <div class="error-feedback hidden text-red-500 text-sm mt-1"></div>
                             </div>
                             <div>
@@ -891,31 +1288,27 @@
                                     <span class="lang-en hidden">Message</span>
                                     <span class="lang-es hidden">Mensaje</span>
                                 </label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows="4"
+                                <textarea id="message" name="message" rows="4"
                                     class="w-full px-4 py-2 border border-blue-300 dark:border-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:text-white dark:bg-gray-800"
-                                    placeholder="Sua Mensagem"
-                                    data-lang-placeholder-pt="Sua Mensagem"
-                                    data-lang-placeholder-en="Your Message"
-                                    data-lang-placeholder-es="Tu Mensaje"
-                                    required
-                                ></textarea>
+                                    placeholder="Sua Mensagem" data-lang-placeholder-pt="Sua Mensagem"
+                                    data-lang-placeholder-en="Your Message" data-lang-placeholder-es="Tu Mensaje"
+                                    required></textarea>
                                 <div class="error-feedback hidden text-red-500 text-sm mt-1"></div>
                             </div>
                             <div id="form-status" class="hidden p-3 rounded-md text-center"></div>
-                            <button
-                                type="submit"
-                                class="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300"
-                            >
+                            <button type="submit"
+                                class="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">
                                 <span class="lang-pt">Enviar Mensagem</span>
                                 <span class="lang-en hidden">Send Message</span>
                                 <span class="lang-es hidden">Enviar Mensaje</span>
                                 <span id="submit-spinner" class="ml-2  hidden">
-                                    <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                    <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24">
+                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                            stroke-width="4"></circle>
+                                        <path class="opacity-75" fill="currentColor"
+                                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                                        </path>
                                     </svg>
                                 </span>
                             </button>
@@ -925,10 +1318,10 @@
             </div>
         </section>
 
-        
+
         <footer class="py-6 bg-blue-900 dark:bg-gray-950 text-white text-center">
             <div class="container mx-auto px-6">
-                <p>&copy; <span id="current-year"></span> Jamil Salomão. 
+                <p>&copy; <span id="current-year"></span> Jamil Salomão.
                     <span class="lang-pt">Todos os direitos reservados.</span>
                     <span class="lang-en hidden">All rights reserved.</span>
                     <span class="lang-es hidden">Todos los derechos reservados.</span>
@@ -938,4 +1331,5 @@
     </main>
     <script type="module" src="js/scripts.js"></script>
 </body>
+
 </html>
