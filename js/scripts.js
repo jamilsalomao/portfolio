@@ -400,12 +400,12 @@ function updateAnimationOnResize() {
     programmingSymbolsContainer.innerHTML = '';
 
     if (window.innerWidth < 768) {
-        maxSymbols = 15;
+        maxSymbols = 10;
         for (let i = 0; i < 3; i++) {
             createSymbol();
         }
     } else {
-        maxSymbols = 35;
+        maxSymbols = 25;
         for (let i = 0; i < 5; i++) {
             createSymbol();
         }
